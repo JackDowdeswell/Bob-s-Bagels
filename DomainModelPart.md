@@ -46,7 +46,7 @@ Part 3:
 | ----------- | ----------- | ----------- | ----------- |
 | Member of public | name@string | nameOfMember() | @string |
 | Bagel | item@string | nameOfMember() | @string |
-| Basket | array[@item] | removeFromBasket() | array[@item] |
+| Basket | array[@item] | addToBasket() | array[@item] |
 | Price | price@int |  itemPrice(bagel) | @int
 
 
@@ -54,5 +54,5 @@ Part 3:
 | ----------- | ----------- | ----------- | ----------- |
 | Member of public | name@string | nameOfMember() | @string |
 | Bagel | item@string | nameOfMember() | @string |
-| Basket | array[@item] | removeFromBasket() | array[@item] |
-| Checkout | array[@item] | itemTotal() | @int |
+| Basket | array[@item] | itemTotal() | array[@item] |
+| Checkout | basket[@item] | displayItemTotal() | @int |
