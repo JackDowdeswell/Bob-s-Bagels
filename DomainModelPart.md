@@ -1,9 +1,5 @@
-objects             properties              messages                output
-member of public    name@string             nameOfMember()          @string
-bagel               item@string             itemName()              @string
-basket              array[@item]            addToBasket()         array[@item]
-
-| Syntax | Description |
+| Object | Properties | Message | Output
 | ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
+| Member of public | name@string | nameOfMember() | @string
+| Bagel | item@string | nameOfMember() | @string
+| Basket | array[@item] | addToBasket() | array[@item]
