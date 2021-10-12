@@ -38,3 +38,19 @@ Part 2:
 | DoesItemExistInBasket | basket @array[@item] | itemExist(@item)| @boolean |
 || | checkItemId(@item)| |
 | Sanity | sanity@int | determineSanity() | @int |
+
+
+| Object | Properties | Message | Output |
+| ----------- | ----------- | ----------- | ----------- |
+| Member of public | name@string | nameOfMember() | @string |
+| Bagel | item@string | nameOfMember() | @string |
+| Basket | array[@item] | removeFromBasket() | array[@item] |
+| Price | price@int |  itemPrice(bagel) | @int
+
+
+| Object | Properties | Message | Output |
+| ----------- | ----------- | ----------- | ----------- |
+| Member of public | name@string | nameOfMember() | @string |
+| Bagel | item@string | nameOfMember() | @string |
+| Basket | array[@item] | removeFromBasket() | array[@item] |
+| Checkout | array[@item] | itemTotal() | @int |
