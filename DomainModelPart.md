@@ -40,6 +40,8 @@ Part 2:
 | Sanity | sanity@int | determineSanity() | @int |
 
 
+Part 3:
+
 | Object | Properties | Message | Output |
 | ----------- | ----------- | ----------- | ----------- |
 | Member of public | name@string | nameOfMember() | @string |
