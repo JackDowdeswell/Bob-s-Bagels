@@ -1,7 +1,7 @@
 class Basket {
 
     // properties
-    numberOfItems = 1;
+    numberOfItems = 0;
     basket;
 
     constructor(numberOfItems, Basket) {
@@ -11,7 +11,9 @@ class Basket {
     }
 
     // messages
-    //numberOfItems() { }
+    addToBasket(input) {
+        input = 1;
+    }
 }
 
 module.exports = Basket;
