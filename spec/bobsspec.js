@@ -11,7 +11,7 @@ let input = ['Sesame Bagel'];
 let expectedOutput = 1;
 
 //Execute (Act)
-let actualOutput = addToBasket(input);
+let actualOutput = basket1.addToBasket(input);
 
 //Verify (Assert)
 let result = assertEquals(actualOutput, expectedOutput);

@@ -2,14 +2,16 @@ class Basket {
 
     // properties
     numberOfItems = 1;
-    Basket;
+    basket;
 
     constructor(numberOfItems, Basket) {
         // set values for object instance
         this.numberOfItems = numberOfItems;
-        this.Basket = Basket;
+        this.basket = Basket;
     }
 
     // messages
     //numberOfItems() { }
 }
+
+module.exports = Basket;
