@@ -1,5 +1,6 @@
 //spec file
 const Basket = require('../src/BobsBagels.js');
+const assertEquals = require('../test-framework.js');
 
 let basket;
 
