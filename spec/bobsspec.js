@@ -2,10 +2,10 @@
 const Basket = require('../src/BobsBagels.js');
 const assertEquals = require('../test-framework.js');
 
-let basket;
+let basket1;
 
 //Setup (Arrange)
-basket = new Basket(0);
+basket1 = new Basket(0);
 
 let input = ['Sesame Bagel'];
 let expectedOutput = 1;
