@@ -39,18 +39,18 @@ console.log(result);
 
 
 
-console.log('Test 3: add 3 items to basket');
+console.log('Test 3: check if basket is full');
 //Setup (Arrange)
-basketArray = ['Test', 'Test2'];
-basket1 = new Basket(basketArray);
+basketArray = ['Test'];
+basket1 = new Basket(basketArray, 1);
 
-input = ['Sesame Bagel', 'Cheese Bagel', 'Poppy Seed Bagel'];
-expectedOutput = 5;
+input = ['Sesame Bagel'];
+expectedOutput = true;
 
 //Execute (Act)
-actualOutput = basket1.addToBasket(input);
+actualOutput = basket1.isBasketFull(input);
 
 //Verify (Assert)
 result = assertEquals(actualOutput, expectedOutput);
-console.log(`Number of items added to the basket: ${input.length}.\nNumber of items now in the basket: ${actualOutput}.`);
+console.log(`Is Basket Full?: ${actualOutput}.`);
 console.log(result);
