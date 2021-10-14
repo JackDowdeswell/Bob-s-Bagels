@@ -3,11 +3,13 @@ class Basket {
     // properties
     //numberOfItems = 0;
     basket = new Array();
+    maxCapacity = 0;
 
-    constructor(/*numberOfItems*/basket = []) {
+    constructor(/*numberOfItems*/basket = [], maxCapacity) {
         // set values for object instance
         //this.numberOfItems = numberOfItems;
         this.basket = basket;
+        this.maxCapacity = maxCapacity;
     }
 
     // messages
@@ -31,12 +33,19 @@ class Basket {
         if (this.basket.length >= 1) {
             console.log('Basket is at max capacity')
             return true;
-            
+
         }
         else {
             console.log('Basket is empty')
             return false;
         }
+    }
+
+    increaseBasketCapacity(items) {
+        if (this.maxCapacity < (this.basket.length + items.length)) {
+            this.maxCapacity += items.length;
+        }
+        return this.maxCapacity
     }
 }
 
