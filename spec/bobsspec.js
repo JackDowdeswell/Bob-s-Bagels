@@ -21,20 +21,20 @@ console.log(`Number of items added to the basket: ${input.length}.\nNumber of it
 console.log(result);
 
 
-console.log('Test 2: add 2 items to basket');
+console.log('Test 2: remove an item from my basket');
 //Setup (Arrange)
 basketArray = ['Test', 'Test2'];
 basket1 = new Basket(basketArray);
 
-input = ['Sesame Bagel', 'Cheese Bagel'];
-expectedOutput = 4;
+input = ['Sesame Bagel'];
+expectedOutput = 0;
 
 //Execute (Act)
-actualOutput = basket1.addToBasket(input);
+actualOutput = basket1.removeFromBasket(input);
 
 //Verify (Assert)
 result = assertEquals(actualOutput, expectedOutput);
-console.log(`Number of items added to the basket: ${input.length}.\nNumber of items now in the basket: ${actualOutput}.`);
+console.log(`Number of items in the basket: ${input.length}.\nNumber of items now in the basket: ${actualOutput}.`);
 console.log(result);
 
 
