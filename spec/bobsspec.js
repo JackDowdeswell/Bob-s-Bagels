@@ -72,3 +72,21 @@ actualOutput = basket1.increaseBasketCapacity(input);
 result = assertEquals(actualOutput, expectedOutput);
 console.log(`Basket capacity is: ${actualOutput}.`);
 console.log(result);
+
+
+
+console.log('Test 5: check if an item exists in basket');
+//Setup (Arrange)
+basketArray = ['Test', 'Sesame Bagel', 'Test2'];
+basket1 = new Basket(basketArray);
+
+input = ['Sesame Bagel'];
+expectedOutput = true;
+
+//Execute (Act)
+actualOutput = basket1.checkIfItemExists(input);
+
+//Verify (Assert)
+result = assertEquals(actualOutput, expectedOutput);
+console.log(`Does item already exist in the basket?: ${actualOutput}.`);
+console.log(result);
