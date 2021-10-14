@@ -26,6 +26,18 @@ class Basket {
         }
         return this.basket.length;
     }
+
+    isBasketFull(items) {
+        if (this.basket.length >= 1) {
+            console.log('Basket is at max capacity')
+            return true;
+            
+        }
+        else {
+            console.log('Basket is empty')
+            return false;
+        }
+    }
 }
 
 module.exports = Basket;
