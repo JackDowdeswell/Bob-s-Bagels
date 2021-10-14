@@ -54,3 +54,21 @@ actualOutput = basket1.isBasketFull(input);
 result = assertEquals(actualOutput, expectedOutput);
 console.log(`Is Basket Full?: ${actualOutput}.`);
 console.log(result);
+
+
+
+console.log('Test 4: add capacity to basket');
+//Setup (Arrange)
+basketArray = ['Test'];
+basket1 = new Basket(basketArray, 1);
+
+input = ['Sesame Bagel'];
+expectedOutput = 2;
+
+//Execute (Act)
+actualOutput = basket1.increaseBasketCapacity(input);
+
+//Verify (Assert)
+result = assertEquals(actualOutput, expectedOutput);
+console.log(`Basket capacity is: ${actualOutput}.`);
+console.log(result);
