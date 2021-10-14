@@ -47,6 +47,18 @@ class Basket {
         }
         return this.maxCapacity
     }
+
+    checkIfItemExists(items) {
+        for (let i = 0; i < items.length; i++) { 
+            if (items[i].indexOf('Sesame Bagel') > -1) {
+                console.log("Item is already in basket");
+                return true;
+            } else {
+                console.log('Item is not in basket');
+                return false;
+            }
+        }
+    }
 }
 
 module.exports = Basket;
